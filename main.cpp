@@ -8,7 +8,7 @@ using namespace std;
 int main() {
     string start;
     cout << "Are you using a prepostion?\n";
-    cin >> start;   // Taking input
+    cin >> start; 
     if(start=="no"){
     cout << "Is it the SUBJECT of the sentence?\nExample:The MAN buys a dog.\n";
     cin >> start;
@@ -27,10 +27,40 @@ int main() {
     if(start=="no"){
       cout << "Are you showing possession??\nEXAMPLE: That is my MOTHER'S room.\n\n";
       cout << "Yes?\nYou have GENITIVE:\n\nm. [des/eines]\nf. [der/einer]\nnt. [des/eines]\npl. [der/meiner]";
+    }else{
+            if(start=="yes"){
+        cout << "Yes?\nYou have NOMINATIVE:\n\nm. [der/ein]\nf. [die/eine]\nnt. [des/ein]\npl. [dir/meine]";
+      }else{
+        cout << "Mistake:Yes or no.\n";
+      }
     }
+    }else{
+            if(start=="yes"){
+        cout << "No?\nYou have DATIVE:\n\nm. [dem/einem]\nf. [der/einer]\nnt. [dem/einem]\npl. [den/meinen]";  
+      }else{
+        cout << "Mistake:Yes or no.\n";
+      }
     }
+    }else{
+      if(start=="yes"){
+        cout << "No?\nYou have DATIVE:\n\nm. [dem/einem]\nf. [der/einer]\nnt. [dem/einem]\npl. [den/meinen]";  
+      }else{
+        cout << "Mistake:Yes or no.\n";
+      }
     }
+    }else{
+      if(start=="yes"){
+        cout << "Yes?\nYou have NOMINATIVE:\n\nm. [der/ein]\nf. [die/eine]\nnt. [des/ein]\npl. [dir/meine]";
+      }else{
+        cout << "Mistake:Yes or no.\n";
+      }
     }
+    }else{
+      if(start=="yes"){
+        cout << "Yes?\nYou have NOMINATIVE:\n\nm. [der/ein]\nf. [die/eine]\nnt. [des/ein]\npl. [dir/meine]";
+      }else{
+        cout << "Mistake:Yes or no.\n";
+      }
     }
     }else{
       
