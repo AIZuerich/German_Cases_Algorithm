@@ -26,13 +26,29 @@ int main() {
     cin >> start;
     if(start=="no"){
       cout << "Are you showing possession??\nEXAMPLE: That is my MOTHER'S room.\n\n";
-      cout << "Yes?\nYou have GENITIVE:\n\n m. [des/eines]\nf. [der/einer]\nnt. [des/eines]\npl. [der/meiner]";
-    
+      cout << "Yes?\nYou have GENITIVE:\n\nm. [des/eines]\nf. [der/einer]\nnt. [des/eines]\npl. [der/meiner]";
     }
     }
     }
     }
     }
+    }else if(start=="yes"){
+       cout << "Are you using \n||aus, bei, mit, nach, seit, von, zu or gegenüber?\n";
+       cin >> start;
+       if(start=="no"){
+         cout << "Are you using \n||an, auf, hinter , in, neben, über, vor or zwischen?\n";
+         cin >> start;
+         if(start=="no"){
+          cout << "Are you using \n||bis, durch, für, gegen, wider, ohne, um or entlang?\n";
+          cin >> start;
+          if(start=="no"){
+              cout << "Then, if you are using\n||trotz, während, wegen or innerhalb||\nYou have GENITIVE:\nEXAMPLE:\n";
+              cout << "Yes?\nYou have GENITIVE:\n\nm. [des/eines]\nf. [der/einer]\nnt. [des/eines]\npl. [der/meiner]";    
+
+          }
+         }
+       }
+
     }
     return 0;
 }
