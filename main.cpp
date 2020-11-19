@@ -45,7 +45,33 @@ int main() {
               cout << "Then, if you are using\n||trotz, während, wegen or innerhalb||\nYou have GENITIVE:\nEXAMPLE:\n";
               cout << "Yes?\nYou have GENITIVE:\n\nm. [des/eines]\nf. [der/einer]\nnt. [des/eines]\npl. [der/meiner]";    
 
+          }else{
+            cout << "You have made a mistake.\n";
           }
+
+         }else{
+         if(start=="yes"){
+          cout << "Is movement from A to B indicated?\n";
+          cin >> start;
+          if(start=="yes"){
+             cout << "Yes?\nYou have ACCUSATIVE:\n\nm. [den/einen]\nf. [die/eine]\nnt. [das/ein]\npl. [die/meine]"; 
+          }else{
+            if(start=="no"){
+              cout << "No?\nYou have DATIVE:\n\nm. [dem/einem]\nf. [der/einer]\nnt. [dem/einem]\npl. [den/meinen]";  
+            }else{
+              cout << "Pls type only: yes or no";
+            }
+            
+          }
+         }else{
+            cout <<"Wrong, you can only write: yes or no";
+         }
+         }
+       }else{
+         if(start=="yes"){
+          cout << "Yes?\nYou have DATIVE:\n\nm. [dem/einem]\nf. [der/einer]\nnt. [dem/einem]\npl. [den/meinen]";  
+         }else{
+            cout <<"Wrong, you can only write: yes or no";
          }
        }
 
