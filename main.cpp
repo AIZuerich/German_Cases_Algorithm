@@ -32,7 +32,9 @@ int main() {
     }
     }
     }
-    }else if(start=="yes"){
+    }else{
+      
+      if(start=="yes"){
        cout << "Are you using \n||aus, bei, mit, nach, seit, von, zu or gegenüber?\n";
        cin >> start;
        if(start=="no"){
@@ -45,9 +47,12 @@ int main() {
               cout << "Then, if you are using\n||trotz, während, wegen or innerhalb||\nYou have GENITIVE:\nEXAMPLE:\n";
               cout << "Yes?\nYou have GENITIVE:\n\nm. [des/eines]\nf. [der/einer]\nnt. [des/eines]\npl. [der/meiner]";    
 
-          }else{
+                }else{
+                  if(start=="yes"){
+                                 cout << "Yes?\nYou have ACCUSATIVE:\n\nm. [den/einen]\nf. [die/eine]\nnt. [das/ein]\npl. [die/meine]"; 
+                  }else{
             cout << "You have made a mistake.\n";
-          }
+          }}
 
          }else{
          if(start=="yes"){
@@ -75,6 +80,8 @@ int main() {
          }
        }
 
+    }
+    
     }
     return 0;
 }
