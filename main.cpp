@@ -3,9 +3,10 @@
 ///19.Nov.2020
 #include <string>
 #include <iostream>
+#include <stdlib.h> 
 using namespace std;
 
-int main() {
+void Grammar(){
     string start;
     cout << "Are you using a prepostion?\n";
     cin >> start; 
@@ -36,14 +37,14 @@ int main() {
     }
     }else{
             if(start=="yes"){
-        cout << "No?\nYou have DATIVE:\n\nm. [dem/einem]\nf. [der/einer]\nnt. [dem/einem]\npl. [den/meinen]";  
+        cout << "You have DATIVE:\n\nm. [dem/einem]\nf. [der/einer]\nnt. [dem/einem]\npl. [den/meinen]";  
       }else{
         cout << "Mistake:Yes or no.\n";
       }
     }
     }else{
       if(start=="yes"){
-        cout << "No?\nYou have DATIVE:\n\nm. [dem/einem]\nf. [der/einer]\nnt. [dem/einem]\npl. [den/meinen]";  
+        cout << "You have DATIVE:\n\nm. [dem/einem]\nf. [der/einer]\nnt. [dem/einem]\npl. [den/meinen]";  
       }else{
         cout << "Mistake:Yes or no.\n";
       }
@@ -110,8 +111,18 @@ int main() {
          }
        }
 
+    
+    
     }
     
     }
+}
+int main(int argc, char *argv[]) {
+    while(true){
+      system ("CLS");
+      Grammar();
+    }
+  
+
     return 0;
 }
