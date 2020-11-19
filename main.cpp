@@ -27,7 +27,7 @@ int main() {
     if(start=="no"){
       cout << "Are you showing possession??\nEXAMPLE: That is my MOTHER'S room.\n\n";
       cout << "Yes?\nYou have GENITIVE:\n\n m. [des/eines]\nf. [der/einer]\nnt. [des/eines]\npl. [der/meiner]";
-
+    
     }
     }
     }
